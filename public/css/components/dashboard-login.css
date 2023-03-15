@@ -1,0 +1,71 @@
+/* login */
+body{
+    overflow-x: hidden;
+}
+.login-section .login-header img {
+    width: 8em;
+    margin-left: 0em;
+    height: auto;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.login-section .h-custom {
+    height: calc(100% - 166px);
+}
+
+.login-section {
+    background: rgb(95,43,151);
+    background: linear-gradient(0deg, rgba(95,43,151,1) 0%, rgba(0,157,234,1) 90%);
+}
+
+.login-section .form-login {
+    background: #a333d6cf;
+    padding: 3em 5em 5em 5em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 10px 4px #3a0c4f12;
+}
+
+.login-section .login-title {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: white;
+}
+
+.login-section .login-title span {
+    font-weight: 900;
+}
+
+.login-section .cajas-texto{
+    padding: 1.2em 0.8em;
+}
+
+.login-section .error-msg {
+    color: white;
+    font-size: .8em;
+}
+
+@media (max-width: 450px) {
+    .login-section .form-login {
+        margin-top: -10vh;
+        padding: 2em 1em 2em 1em;
+    }
+
+    .footer{
+        position: relative;
+        bottom: 0px;
+        width: 100vw !important;
+    }
+
+    button{
+        font-weight: 600 !important;
+    }
+}
+
+

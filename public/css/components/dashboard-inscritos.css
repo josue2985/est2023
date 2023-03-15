@@ -1,0 +1,118 @@
+#inscritos.dataTable {
+    border-collapse: separate ;
+    border-spacing: 0 15px;
+}
+
+#inscritos.dataTable thead th {
+    border-bottom: 0px;
+}
+
+#inscritos.dataTable thead{
+    opacity: 0.6;
+    display: none;
+}
+
+#inscritos.dataTable tbody tr {
+    background: #ededed;
+}
+
+#inscritos.dataTable tbody th,
+#inscritos.dataTable tbody td {
+    background: white;
+    border-bottom: 0;
+    padding: 18px 10px;
+}
+
+#inscritos tr td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#inscritos tr td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#inscritos .ig-user {
+    font-size: .8em;
+}
+
+#inscritos.dataTable.no-footer {
+    border-bottom: 0px;
+}
+
+#inscritos_filter input {
+    background: white;
+    border-radius: 5px;
+    border-color: #ddd;
+    outline: 0;
+    padding-left: 0.6em;
+    padding: 8px 10px;
+}
+
+#inscritos_filter input:focus-visible {
+    border-color: #32aeaf;
+}
+
+.resumen-section .dt-button {
+    border-radius: 5px;
+    background: #32aeaf;
+    border-color: #32aeaf;
+    color: white;
+    text-transform: none;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.resumen-section .btn-filters {
+    margin-top: 1.2em;
+}
+
+.resumen-section .btn-primary {
+    text-transform: none;
+    font-weight: 700;
+}
+
+.resumen-section .btn-delete {
+    text-transform: none;
+    font-weight: 700;
+}
+
+.resumen-section button.dt-button:hover:not(.disabled), .resumen-section button.dt-button:focus:not(.disabled)  {
+    background: #217c7d;
+    border-color: #217c7d;
+    text-shadow: none;
+}
+
+.resumen-section .dt-button:focus-visible, :not(.btn-check)+.resumen-section .dt-button:active {
+    background-color: #217c7d;
+    border-color: #217c7d;
+    box-shadow: 0px 0px 2px 2px #2eaeaf;
+}
+
+.resumen-section .dataTables_info {
+    color: #666 !important;
+    font-size: .8em;
+}
+
+.resumen-section .dataTables_paginate {
+    font-size: .8em;
+}
+
+.resumen-section span .paginate_button {
+    background: white !important;
+    border-radius: 5px !important;
+    border: none !important;
+}
+
+.resumen-section div.dt-buttons {
+    float: right;
+    margin-left: 1em;
+}
+
+.resumen-section label {
+    color: #666;
+    font-size: .8em;
+}
+
+

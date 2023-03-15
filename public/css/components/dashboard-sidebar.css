@@ -1,0 +1,103 @@
+.sidebar-dashboard {
+    /* background: rgb(95,43,151); */
+    background: linear-gradient(0deg, rgba(95,43,151,1) 0%, rgba(0,157,234,1) 90%);
+}
+
+.sidebar-dashboard .logo-estilo {
+    width: 10vmin;
+    margin-left: 0em;
+}
+
+.sidebar-dashboard .nav {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.sidebar-dashboard .nav li a {
+    color: white;
+    font-size: 1.5em;
+    opacity: 0.6;
+    background-color: transparent;
+}
+
+.sidebar-dashboard .nav li a.active {
+    opacity: 1;
+    color: inherit;
+    background-color: transparent;
+}
+
+.sidebar-dashboard .nav li:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.sidebar-dashboard .logout .nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.sidebar-dashboard-2{
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .sidebar-dashboard{
+        display: none;
+    }
+
+    .sidebar-dashboard-2{
+        display: block;
+        background: linear-gradient(0deg, rgba(95,43,151,1) 0%, rgba(0,157,234,1) 90%);
+        margin: 0px !important;
+        padding: 0px !important;
+        display: flex;
+        position:fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 80px;
+        z-index: 2;
+    }
+
+    .sidebar-dashboard-2 nav{
+        background-color: transparent !important;
+    }
+
+    .layout-dashboard-content{
+        margin-top: 60px;
+    }
+
+    .sidebar-dashboard-2 .logo-estilo {
+        width: 10vmax;
+        margin-left: 0em;
+        margin-right: 0em;
+        margin-top: -1.0em;
+    }
+
+    .sidebar-dashboard-2 .menu {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar-dashboard-2 .menu li{
+        list-style-type:none;
+        padding: 20px;
+    }
+
+    .sidebar-dashboard-2 .menu li a {
+        color: white;
+        font-size: 2.0em;
+        opacity: 0.6;
+        background-color: transparent;
+    }
+
+    #con-canvas{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+}

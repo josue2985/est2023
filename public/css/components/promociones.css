@@ -1,0 +1,440 @@
+/* Header */
+
+.top-container {
+    position: relative;
+    z-index: 99;
+}
+.logo-estilo {
+    width: 12em;
+    margin-left: 5em;
+    height: auto;
+}
+
+.formularioGrand .yellow-dots {
+    width: 9em;
+    position: absolute;
+    right: -5em;
+    top: 2em;
+}
+
+.header-picture {
+    position: relative;
+    height: 100%;
+}
+
+.header-picture img {
+    position: absolute;
+    width: 147%;
+    bottom: 0;
+}
+
+.formulario-container {
+    position: relative;
+    z-index: 9;
+    margin-top: 4em;
+}
+
+.formulario-container .formulario {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 6em;
+}
+
+.formulario-container .subtitle p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.formulario-container .subtitle p .fs-1-2  {
+    font-size: 1.2em;
+}
+
+.txt-bolder {
+    font-weight: 900;
+}
+
+.formulario h4 {
+    color: white;
+    font-weight: 900;
+    font-size: 1.4em;
+    margin-bottom: 0.6em;
+}
+
+.formularioGrand{
+    background: rgb(144,35,127);
+    background: linear-gradient(0deg, #6753a5 0%, rgb(36 206 208) 53%, rgba(6,135,156,0.969625350140056) 82%, rgba(0,0,0,1) 100%);
+}
+.cajas-texto{
+    padding: 0.3em 0.8em;
+    font-size: .8em;
+    background: #ffffff00;
+    color: white;
+    transition: all 240ms ease-in;
+}
+
+.cajas-texto::placeholder {
+    color: rgba(255, 255, 255, 0.581);
+}
+
+.cajas-texto:focus {
+    box-shadow: 0px 1px 6px 1px #7629ff;
+    background: #a85dee;
+    border-color: #c7a7ff !important;
+    color: white;
+}
+
+.cajas-texto:-webkit-autofill,
+.cajas-texto:-webkit-autofill:hover,
+.cajas-texto:-webkit-autofill:focus,
+.cajas-texto:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px blueviolet inset !important;
+    color: white;
+}
+.cajas-texto:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: blueviolet !important;
+    border-radius: 5px !important;
+    border: 1px solid white !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: white !important;
+    font-size: .8em;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: white transparent transparent transparent !important;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: .8em;
+    margin-bottom: 1em;
+}
+
+.form-check .form-check-input {
+    margin-right: 0.5em;
+}
+
+.send-registro {
+    background: #32aeaf;
+    border-color: #32aeaf;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0.3em 0.6em;
+    font-size: 1.4em;
+}
+
+.send-registro:hover {
+    background: #217c7d;
+    border-color: #217c7d;
+}
+
+.send-registro:focus-visible {
+    background-color: #217c7d;
+    border-color: #217c7d;
+    box-shadow: 0px 0px 2px 2px #2eaeaf;
+}
+
+
+.sombra-no{
+    box-shadow: none !important;
+}
+.fondoGrand{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+.bg-purple{
+    background-color: blueviolet !important;
+}
+
+/* Productos Grand */
+
+.productosGrand{
+    position: relative;
+    background: #009ade;
+    background: linear-gradient(359deg, #009ade 23%, #51368d 89%);
+}
+
+.productosGrand h2 {
+    font-weight: 900 !important;
+    margin-bottom: 1em;
+    font-size: 2.4em;
+}
+
+.productosGrand .section-title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.productosGrand .confeti img {
+    max-width: 100%;
+}
+
+.productosGrand .title-products {
+    width: auto;
+}
+
+.productosGrand .confeti.first {
+    width: 4em;
+    margin-right: 0em;
+    position: relative;
+    top: 1em;
+    right: 2em;
+}
+
+.productosGrand .confeti.second {
+    width: 6em;
+    margin-left: 0;
+    position: relative;
+    top: 1em;
+    left: 11em;
+}
+
+.productosGrand .bottom-confeti {
+    position: absolute;
+    bottom: 0;
+}
+
+.productosGrand .premios-section .confeti.first {
+    position: absolute;
+    right: 13em;
+    bottom: 2em;
+    top: unset;
+}
+
+.productosGrand .premios-section .confeti.second {
+    position: absolute;
+    left: 11em;
+    bottom: 3em;
+    top: unset;
+    right: unset;
+}
+
+.productosGrand:before {
+    content: '';
+    width: 147px;
+    height: 65px;
+    position: absolute;
+    top: 11%;
+    left: 12%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../img/dots-header-yellow.webp);
+}
+
+
+/* codigo Grand */
+
+.codigoGrand{
+    background-color: orange;
+    position: relative;
+}
+
+.w-vmin{
+    width: 60vmin !important;
+}
+.w-vmin-2{
+    width: 100% !important;
+}
+
+.codigoGrand .section-title h2 {
+    font-size: 2.3em;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+.codigoGrand .section-title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.codigoGrand .confeti img {
+    max-width: 100%;
+}
+
+.codigoGrand .section-title .confeti.second {
+    width: 4.5em;
+    position: absolute;
+    left: 25em;
+    top: 3em;
+}
+
+.codigoGrand .section-title .yellow-dots {
+    width: 10em;
+    position: absolute;
+    right: 8em;
+    top: 1em;
+}
+
+.codigoGrand:after {
+    content: '';
+    width: 147px;
+    height: 65px;
+    position: absolute;
+    top: 9%;
+    right: 14%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../img/dots-header-yellow.webp);
+}
+
+.codigoGrand:before {
+    content: '';
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: 11%;
+    left: 17%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../img/confeti-3.webp);
+}
+
+.codigoGrand .final-text h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-top: 1.2em;
+}
+
+/* Contact GRand */
+
+.contactoGrand{
+    position: relative;
+    background: rgb(18,93,221);
+    background: linear-gradient(359deg, #009ade 23%, #51368d 89%);
+}
+
+.contactoGrand a {
+    color: #51368d;
+}
+
+.contactoGrand:after {
+    content: '';
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    bottom: 11%;
+    right: 17%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../img/confeti-2.webp);
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(33, 33, 33);
+}
+
+.footer img {
+    max-width: 11em;
+}
+
+@media only screen and (max-width: 762px) {
+    .top-container {
+        text-align: center;
+    }
+    .logo-estilo {
+        margin: auto;
+        width: 56%;
+        text-align: center;
+    }
+    .formulario-container {
+        margin-top: 1em;
+    }
+    .header-picture img {
+        position: relative;
+        left: -20px;
+    }
+    .formulario-container .formulario {
+        width: 90%;
+    }
+    .formularioGrand .yellow-dots {
+        display: none;
+    }
+    .productosGrand h2 {
+        font-size: 1.8em;
+    }
+    .productosGrand .confeti.first {
+        top: -1em;
+    }
+    .productosGrand .confeti.second {
+        top: -1em;
+        left: 10em;
+    }
+    .productosGrand:before {
+        top: 13em;
+    }
+    .codigoGrand:after {
+        top: 13%;
+    }
+    .contactoGrand a {
+        width: 100% !important;
+    }
+    .w-vmin-2{
+        width: 50vmin !important;
+    }
+}
+
+@media only screen and (max-width: 1535px) {
+    .productosGrand:before {
+        left: 1%;
+    }
+    .codigoGrand:after {
+        right: 1%;
+    }
+}
+
+.sin-color{
+    background-color: transparent !important;
+}
+.border-no{
+    border: none !important;
+}
+.numero{
+    font-size: 5em !important;
+}
+.numero-1{
+    font-size: 6em !important;
+}
+.circulo{
+    width: 100%;
+    padding: 20px;
+}
+.f-w{
+    font-weight: bold !important;
+}
+.display-inline{
+    display: inline-flex !important;
+    align-items: center;
+}
+
+/* titulo */
+.sin-padding{
+    padding: 0px !important;
+}
+span.sub {
+    vertical-align: sub;
+}
+span.super {
+    vertical-align: super;
+}

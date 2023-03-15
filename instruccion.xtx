@@ -1,0 +1,17 @@
+descargar en instalar
+XAMPP con php 7.22 mínimo O WAMPSERVER
+instalar composer
+ejecutar la siguiente linea de código en la consola
+composer global require laravel/installer
+
+crear una base de datos con el nombre de pocket
+
+abrir la ruta del proyecto con la consola
+ejecutar las siguientes linea de código
+
+//para ejecutar la migraciones
+php artisan migrate
+
+//para alzar el servidor de laravel
+php artisan serve
+

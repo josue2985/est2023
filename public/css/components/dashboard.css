@@ -1,0 +1,26 @@
+.layout-dashboard-content .card-header {
+    background-color: white;
+    border-bottom: 0;
+}
+
+.layout-dashboard-content .card-header i {
+    font-size: 1.3em;
+}
+
+.layout-dashboard-content .card-header h3 {
+    font-size: 1.4em;
+}
+
+.layout-dashboard-content .top-cities .rounded-pill {
+    color: black;
+    font-weight: 400;
+}
+
+.layout-dashboard-content .card .list-group  {
+    min-height: 8em;
+}
+
+#con-canvas{
+    width: 100% !important;
+    height: 80% !important;
+}
