@@ -6,8 +6,18 @@
             <div class="row">
                 <div class="col px-5">
                     <div class="top-container">
-                        <img src="{{asset('img/logo-estilo.webp')}}" class="img-fluid logo-estilo" width="100px">
-                        <img src="{{asset('img/dots-header-yellow.webp')}}" class="yellow-dots img-fluid" width="100px">
+                        <picture>
+                            <source srcset="{{asset('img/logo-estilo.webp')}}" type="image/webp">
+                            <source srcset="{{asset('img/fallback/logo-estilo.png')}}" type="image/jpeg">
+                            <img src="{{asset('img/fallback/logo-estilo.png')}}" class="img-fluid logo-estilo" width="100px">
+                        </picture>
+
+                        <picture>
+                            <source srcset="{{asset('img/dots-header-yellow.webp')}}" type="image/webp">
+                            <source srcset="{{asset('img/fallback/dots-header-yellow.png')}}" type="image/jpeg">
+                            <img src="{{asset('img/fallback/dots-header-yellow.png')}}" class="yellow-dots img-fluid" width="100px">
+                        </picture>
+
                     </div>
                 </div>
             </div>
@@ -16,7 +26,11 @@
             <div class="row">
                 <div class="col-12 col-md-7 sombra-no">
                     <div class="card sin-color border-no sombra-no header-picture">
-                        <img src="{{asset('img/header-papelesa.webp')}}" class="sombra-no border-no" alt="...">
+                        <picture>
+                            <source srcset="{{asset('img/header-papelesa.webp')}}" type="image/webp">
+                            <source srcset="{{asset('img/fallback/header-papelesa.png')}}" type="image/jpeg">
+                            <img src="{{asset('img/fallback/header-papelesa.png')}}" class="sombra-no border-no safari-papelesa" alt="...">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-12 col-md-5 formulario-container">
@@ -83,10 +97,14 @@
         <div class="container">
             <div class="row mb-5 section-title">
                 <div class="confeti first">
-                    <img src="{{asset('img/confeti-1.webp')}}" alt="estilo">
+                    <picture>
+                        <source srcset="{{asset('img/confeti-1.webp')}}" type="image/webp">
+                        <source srcset="{{asset('img/fallback/confeti-1.png')}}" type="image/jpeg">
+                        <img src="{{asset('img/fallback/confeti-1.png')}}" alt="estilo">
+                    </picture>
                 </div>
                 <div class="col-12 text-center title-products">
-                    <h2 class="f-w sin-padding text-warning">
+                    <h2 class="f-w sin-padding text-warning saltoL">
                         <span class="sub">C</span>
                         <span class="">A</span>
                         <span class="sub">D</span>
@@ -96,6 +114,7 @@
                         <span class="">E</span>
                         <span class="sub">S</span>
                         <span class="">&nbsp;</span>
+                        <br>
                         <span class="">S</span>
                         <span class="sub">O</span>
                         <span class="">R</span>
@@ -108,13 +127,22 @@
                     </h2>
                 </div>
                 <div class="confeti second">
-                    <img src="{{asset('img/confeti-2.webp')}}" alt="estilo">
+                    <picture>
+                        <source srcset="{{asset('img/confeti-2.webp')}}" type="image/webp">
+                        <source srcset="{{asset('img/fallback/confeti-2.png')}}" type="image/jpeg">
+                        <img src="{{asset('img/fallback/confeti-2.png')}}" alt="estilo">
+                    </picture>
+
                 </div>
             </div>
             <div class="row premios-section">
                 <div class="col-12 col-md-4">
                     <div class="confeti second">
-                        <img src="{{asset('img/confeti-2.webp')}}" alt="estilo">
+                        <picture>
+                            <source srcset="{{asset('img/confeti-2.webp')}}" type="image/webp">
+                            <source srcset="{{asset('img/fallback/confeti-2.png')}}" type="image/jpeg">
+                            <img src="{{asset('img/fallback/confeti-2.png')}}" alt="estilo">
+                        </picture>
                     </div>
                     <div class="card mb-3 sin-color border-no">
                         <div class="row">
@@ -126,7 +154,11 @@
                             </div>
                             <div class="col-12 col-md-7">
                                 <center>
-                                    <img src="{{asset('img/sorteo-box-1.webp')}}" class="img-fluid rounded-start w-vmin" alt="...">
+                                    <picture>
+                                        <source srcset="{{asset('img/sorteo-box-1.webp')}}" type="image/webp">
+                                        <source srcset="{{asset('img/fallback/sorteo-box-1.png')}}" type="image/jpeg">
+                                        <img src="{{asset('img/fallback/sorteo-box-1.png')}}" class="img-fluid rounded-start w-vmin" alt="...">
+                                    </picture>
                                 </center>
                             </div>
                         </div>
@@ -143,7 +175,11 @@
                             </div>
                             <div class="col-12 col-md-7">
                                 <center>
-                                    <img src="{{asset('img/sorteo-box-2.webp')}}" class="img-fluid rounded-start w-vmin" alt="...">
+                                    <picture>
+                                        <source srcset="{{asset('img/sorteo-box-2.webp')}}" type="image/webp">
+                                        <source srcset="{{asset('img/fallback/sorteo-box-2.png')}}" type="image/jpeg">
+                                        <img src="{{asset('img/fallback/sorteo-box-2.png')}}" class="img-fluid rounded-start w-vmin" alt="...">
+                                    </picture>
                                 </center>
                             </div>
                         </div>
@@ -160,13 +196,21 @@
                             </div>
                             <div class="col-12 col-md-7">
                                 <center>
-                                    <img src="{{asset('img/sorteo-box-3.webp')}}" class="img-fluid rounded-start w-vmin" alt="...">
+                                    <picture>
+                                        <source srcset="{{asset('img/sorteo-box-3.webp')}}" type="image/webp">
+                                        <source srcset="{{asset('img/fallback/sorteo-box-3.png')}}" type="image/jpeg">
+                                        <img src="{{asset('img/fallback/sorteo-box-3.png')}}" class="img-fluid rounded-start w-vmin" alt="...">
+                                    </picture>
                                 </center>
                             </div>
                         </div>
                     </div>
                     <div class="confeti first">
-                        <img src="{{asset('img/confeti-1.webp')}}" alt="estilo">
+                        <picture>
+                            <source srcset="{{asset('img/confeti-1.webp')}}" type="image/webp">
+                            <source srcset="{{asset('img/fallback/confeti-1.png')}}" type="image/jpeg">
+                            <img src="{{asset('img/fallback/confeti-1.png')}}" alt="estilo">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -196,7 +240,11 @@
                                 <div class="col-12 col-md-4 sin-padding">
                                     <center>
                                         <div>
-                                            <img src="{{asset('img/codigo-box-1.webp')}}" class="img-fluid" alt="...">
+                                            <picture>
+                                                <source srcset="{{asset('img/codigo-box-1.webp')}}" type="image/webp">
+                                                <source srcset="{{asset('img/fallback/codigo-box-1.png')}}" type="image/jpeg">
+                                                <img src="{{asset('img/fallback/codigo-box-1.png')}}" class="img-fluid" alt="...">
+                                            </picture>
                                         </div>
                                     </center>
                                 </div>
@@ -216,7 +264,11 @@
                                 <div class="col-12 col-md-4 sin-padding">
                                     <center>
                                         <div>
-                                            <img src="{{asset('img/codigo-box-2.webp')}}" class="img-fluid" alt="...">
+                                            <picture>
+                                                <source srcset="{{asset('img/codigo-box-2.webp')}}" type="image/webp">
+                                                <source srcset="{{asset('img/fallback/codigo-box-2.png')}}" type="image/jpeg">
+                                                <img src="{{asset('img/fallback/codigo-box-2.png')}}" class="img-fluid" alt="...">
+                                            </picture>
                                         </div>
                                     </center>
                                 </div>
@@ -236,7 +288,11 @@
                                 <div class="col-12 col-md-4 sin-padding">
                                     <center>
                                         <div>
-                                            <img src="{{asset('img/codigo-box-3.webp')}}" class="img-fluid" alt="...">
+                                            <picture>
+                                                <source srcset="{{asset('img/codigo-box-3.webp')}}" type="image/webp">
+                                                <source srcset="{{asset('img/fallback/codigo-box-3.png')}}" type="image/jpeg">
+                                                <img src="{{asset('img/fallback/codigo-box-3.png')}}" class="img-fluid" alt="...">
+                                            </picture>
                                         </div>
                                     </center>
                                 </div>
@@ -271,7 +327,11 @@
     <div class="section p-3 footer">
         <div class="row">
             <div class="col-12 text-center">
-                <img src="{{asset('img/logo-papelesa.webp')}}" alt="logo-papelesa">
+                <picture>
+                    <source srcset="{{asset('img/logo-papelesa.webp')}}" type="image/webp">
+                    <source srcset="{{asset('img/fallback/logo-papelesa.png')}}" type="image/jpeg">
+                    <img src="{{asset('img/fallback/logo-papelesa.png')}}" alt="logo-papelesa">
+                </picture>
             </div>
         </div>
     </div>

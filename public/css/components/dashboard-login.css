@@ -1,7 +1,8 @@
 /* login */
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
+
 .login-section .login-header img {
     width: 8em;
     margin-left: 0em;

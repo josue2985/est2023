@@ -76,7 +76,7 @@
     </form>
 @endsection
 @section('javascript')
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{asset('chart/chart.umd.js')}}"></script>
     <script text="javaScript">
         let myChart
 

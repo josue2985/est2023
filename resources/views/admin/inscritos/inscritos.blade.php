@@ -1,6 +1,6 @@
 @section('title', "Registro Participantes")
 @extends('layout.layout2')
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" href="{{asset('css/boxicons.min.css')}}">
 <style>
     body {
         background-color: #ededed !important;
@@ -89,7 +89,7 @@
 $(document).ready( function () {
     $('#inscritos').DataTable({
         "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
+            "url": "{{asset('lang/es.json')}}"
         },
         dom: 'Bfrtip',
         buttons: [

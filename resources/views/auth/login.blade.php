@@ -6,7 +6,11 @@
             <div class="row">
                 <div class="col px-5">
                     <div class="top-container text-center">
-                        <img src="{{asset('img/logo-estilo.webp')}}" class="img-fluid logo-estilo" width="100px">
+                        <picture>
+                            <source srcset="{{asset('img/logo-estilo.webp')}}" type="image/webp">
+                            <source srcset="{{asset('img/fallback/logo-estilo.png')}}" type="image/jpeg">
+                            <img src="{{asset('img/fallback/logo-estilo.png')}}" class="img-fluid logo-estilo" width="100px">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -55,7 +59,11 @@
         <div class="section p-3 footer">
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="{{asset('img/logo-papelesa.webp')}}" alt="logo-papelesa">
+                    <picture>
+                        <source srcset="{{asset('img/logo-papelesa.webp')}}" type="image/webp">
+                        <source srcset="{{asset('img/fallback/logo-papelesa.png')}}" type="image/jpeg">
+                        <img src="{{asset('img/fallback/logo-papelesa.png')}}" alt="logo-papelesa">
+                    </picture>
                 </div>
             </div>
         </div>

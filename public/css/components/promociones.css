@@ -67,6 +67,7 @@
 .formularioGrand{
     background: rgb(144,35,127);
     background: linear-gradient(0deg, #6753a5 0%, rgb(36 206 208) 53%, rgba(6,135,156,0.969625350140056) 82%, rgba(0,0,0,1) 100%);
+    overflow-x: hidden;
 }
 .cajas-texto{
     padding: 0.3em 0.8em;
@@ -235,7 +236,7 @@
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../../img/dots-header-yellow.webp);
+    background-image: url(../../img/fallback/dots-header-yellow.png);
 }
 
 
@@ -293,7 +294,7 @@
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../../img/dots-header-yellow.webp);
+    background-image: url(../../img/fallback/dots-header-yellow.png);
 }
 
 .codigoGrand:before {
@@ -306,7 +307,7 @@
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../../img/confeti-3.webp);
+    background-image: url(../../img/fallback/confeti-3.png);
 }
 
 .codigoGrand .final-text h2 {
@@ -337,7 +338,7 @@
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../../img/confeti-2.webp);
+    background-image: url(../../img/fallback/confeti-2.png);
 }
 
 /* Footer */
@@ -349,7 +350,14 @@
     max-width: 11em;
 }
 
+.saltoL br{
+    display: none;
+}
+
 @media only screen and (max-width: 762px) {
+    .saltoL br{
+        display:block
+    }
     .top-container {
         text-align: center;
     }
@@ -403,6 +411,12 @@
         right: 1%;
     }
 }
+
+@media not all and (min-resolution:.001dpcm) { @media {
+    .safari-papelesa {
+        top:0px;
+    }
+}}
 
 .sin-color{
     background-color: transparent !important;

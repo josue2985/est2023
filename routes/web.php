@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [PagesController::class, 'promotions'])->name('promotions');
+Route::get('/', [PagesController::class, 'promotions'])->name('promotionsIndex');
 Route::get('/index', [PagesController::class, 'promotions'])->name('promotions');
 Route::get('/iniciarSesion', [PagesController::class, 'iniciarSesion'])->name('inciarSesion');
 

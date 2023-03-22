@@ -7,60 +7,69 @@ use App\Models\Promotions;
 use App\Models\Vistas;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class PromotionsController extends Controller
 {
     public function inscripcion(){
-        request()->validate([
-            "nombre"=>"required|string",
-            "apellido"=>"required|string",
-            "telefono"=>"required|string",
-            "correo"=>"required|email",
-            "ciudad"=>"required|string",
-            "usuarioInstagram"=>"required|string",
-            "codigo"=>"required|string",
-        ]);
+        try{
+            request()->validate([
+                "nombre"=>"required|string",
+                "apellido"=>"required|string",
+                "telefono"=>"required|string",
+                "correo"=>"required|email",
+                "ciudad"=>"required|string",
+                "usuarioInstagram"=>"required|string",
+                "codigo"=>"required|string",
+            ]);
 
-        $data = [
-            "nombre" => request()->nombre,
-            "apellido" => request()->apellido,
-            "telefono" => request()->telefono,
-            "correo" => request()->correo,
-            "ciudad" => request()->ciudad,
-            "usuarioInstagram" => request()->usuarioInstagram,
-            "codigo" => request()->codigo,
-        ];
+            $data = [
+                "nombre" => request()->nombre,
+                "apellido" => request()->apellido,
+                "telefono" => request()->telefono,
+                "correo" => request()->correo,
+                "ciudad" => request()->ciudad,
+                "usuarioInstagram" => request()->usuarioInstagram,
+                "codigo" => request()->codigo,
+            ];
 
-        $codigo = Codigos::where('codigos', request()->codigo)->first();
-        if($codigo == NULL){
+            $codigo = Codigos::where('codigos', request()->codigo)->first();
+            if($codigo == NULL){
+                return Redirect()->route('promotions')->with([
+                    "tag"=>"Su inscripción no fue exitosa",
+                    "titulo"=>"Código",
+                    "message"=>"El código que ingresaste no es valido",
+                    "tipo"=>"error"
+                ]);
+            }
+
+            $inscrito = Promotions::where('codigo', request()->codigo)->first();
+
+            if($inscrito == NULL){
+                Promotions::create($data);
+                return Redirect()->route('promotions')->with([
+                    "tag"=>"Su inscripción fue exitosa",
+                    "titulo"=>"Inscripción",
+                    "message"=>"Su inscripción fue exitosa",
+                    "tipo"=>"success"
+                ]);
+            }
+
             return Redirect()->route('promotions')->with([
                 "tag"=>"Su inscripción no fue exitosa",
-                "titulo"=>"Código",
-                "message"=>"El código que ingresaste no es valido",
+                "titulo"=>"Inscripción",
+                "message"=>"Codigo ingresado esta duplicado",
+                "tipo"=>"error"
+            ]);
+        }catch(\Exception $e){
+            Log::error($e->getMessage());
+            return Redirect()->route('promotions')->with([
+                "tag"=>"Su inscripción no fue exitosa",
+                "titulo"=>"Inscripción",
+                "message"=>"Codigo ingresado esta duplicado",
                 "tipo"=>"error"
             ]);
         }
-
-        // $inscrito = Promotions::where('correo', request()->correo)->orWhere('usuarioInstagram', request()->usuarioInstagram)->orWhere('codigo', request()->codigo)->first();
-        $inscrito = Promotions::where('codigo', request()->codigo)->first();
-
-        if($inscrito == NULL){
-            Promotions::create($data);
-            return Redirect()->route('promotions')->with([
-                "tag"=>"Su inscripción fue exitosa",
-                "titulo"=>"Inscripción",
-                "message"=>"Su inscripción fue exitosa",
-                "tipo"=>"success"
-            ]);
-        }
-
-        return Redirect()->route('promotions')->with([
-            "tag"=>"Su inscripción no fue exitosa",
-            "titulo"=>"Inscripción",
-            "message"=>"Codigo ingresado esta duplicado",
-            "tipo"=>"error"
-        ]);
-
     }
 
     public function dashboard(){
